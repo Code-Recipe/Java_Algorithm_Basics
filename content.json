@@ -1,0 +1,39 @@
+{
+  "name": "Java算法基础教程",
+  "desc": "这个教程主要用Java介绍入门级别的算法，对学习和备考AP以及入门计算机编程都会很有帮助。",
+  "keywords": ["编程", "基础"],
+  "cover": "cover.png",
+  "tags": ["编程", "基础", "入门"],
+  "chapters": [
+    {
+      "name": "递归",
+      "content": "Chapter1/Chapter1.md",
+      "sections": [
+        {"name":"递归方法"},
+        {"name":"递归的最简形式"},
+        {"name":"分析递归函数"},
+        {"name":"递归的注意事项"},
+        {"name":"小练习"}
+      ]
+    },
+    {
+      "name": "排序",
+      "content": "Chapter2/Chapter2.md",
+      "sections": [
+        {"name":"选择排序"},
+        {"name":"插入排序"},
+        {"name":"归并排序"},
+        {"name":"小练习"}
+      ]
+    },
+    {
+      "name": "搜索",
+      "content": "Chapter3/Chapter3.md",
+      "sections": [
+        {"name":"顺序搜索"},
+        {"name":"二叉搜索"},
+        {"name":"小练习"}
+      ]
+    }
+  ]
+}
