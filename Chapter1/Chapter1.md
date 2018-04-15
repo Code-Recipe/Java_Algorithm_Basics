@@ -33,7 +33,7 @@ public class Hello {
   }
   public static void recursion(int val) {
     System.out.println(val);
-    if(val>0){
+    if (val>0) {
       recursion(val-1);
     }
   } 
