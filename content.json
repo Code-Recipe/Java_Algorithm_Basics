@@ -2,7 +2,7 @@
   "name": "Java算法基础教程",
   "desc": "这个教程主要用Java介绍入门级别的算法，对学习和备考AP以及入门计算机编程都会很有帮助。",
   "keywords": ["编程", "基础"],
-  "cover": "cover.png",
+  "cover": "cover.jpg",
   "tags": ["编程", "基础", "入门"],
   "chapters": [
     {
