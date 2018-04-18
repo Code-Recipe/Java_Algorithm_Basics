@@ -30,22 +30,26 @@ public static  int sequentialSerach(int[] elements, int target){
 如果比我们想要的小，我们就在右边搜索。然后在缩小后的搜索范围查看判断后数组中间的数，就这样依次进行下去，直到找到结果或者全部搜索完成。不过，利用二进制搜索的数组必须是排列好的，否则比如先排序才行。
 
 ```java
-/*
-    @param elements an array containing the items to be sorted.
-    
-    Postcondition: elements contains its original items and items 
-                   in elements are sorted in ascending order.
-*/
-public static void insertionSort(int[] elements){
-    for(int j = 1; j< elements.length; j++){
-        int temp = elements[j];
-        int possibleIndex = j;
-        while(possibleIndex > 0 && temp < elements[possibleIndex - 1]){
-            elements[possibleIndex] = elements[possibleIndex - 1];
-            possibleIndex --;
-        }
-        elements[possibleIndex] = temp;
+/***
+    @param elements. an array containing the items to be searched.
+            Precondition: items in elements are sorted in ascending order.
+    @param target. the item to be found in elements.
+    @return an index of target in elements if target found; -1 otherwise.
+***/
+public static int binarySearch(int[] elements, int target){
+    int left = 0;
+    int right = elemetns.length -1 ;
+    while (left <= right){
+        int middle (left + right)/2;
+        if (targetr < elements[middle]
+            right =middle-1;
+        else if (target> elements[middle])
+            left = middle +1;
+        else 
+            return middle
+        
     }
+    return -1;
 }
 ```
 
