@@ -14,8 +14,8 @@
     @param target the item to be found in element.
     @return an index of target in elements if foun; -1 otherwise;
     ***/
-public static  int sequentialSerach(int[] elements, int target){
-    for (int j = 0; j< elements.length; j++)
+public static  int sequentialSerach(int[] elements, int target) {
+    for (int j = 0; j < elements.length; j++)
         if (elements[j == target]) //String uses equals()
             return j;
     return -1;
@@ -36,15 +36,15 @@ public static  int sequentialSerach(int[] elements, int target){
     @param target. the item to be found in elements.
     @return an index of target in elements if target found; -1 otherwise.
 ***/
-public static int binarySearch(int[] elements, int target){
+public static int binarySearch(int[] elements, int target) {
     int left = 0;
-    int right = elemetns.length -1 ;
-    while (left <= right){
-        int middle (left + right)/2;
+    int right = elemetns.length - 1;
+    while (left <= right) {
+        int middle = (left + right) / 2;
         if (targetr < elements[middle]
-            right =middle-1;
-        else if (target> elements[middle])
-            left = middle +1;
+            right = middle - 1;
+        else if (target > elements[middle])
+            left = middle + 1;
         else 
             return middle
         

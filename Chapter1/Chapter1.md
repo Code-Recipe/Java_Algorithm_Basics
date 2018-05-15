@@ -53,8 +53,8 @@ public class Hello {
 ------
 比如我们有如下的一个递归函数：
 ```java
-public static int fib(int n){
-if(n == 1||n == 2){
+public static int fib(int n) {
+if(n == 1||n == 2) {
   return 1;
 } else {
   return fib(n - 1) + fib(n - 2);

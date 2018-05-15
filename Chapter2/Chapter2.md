@@ -18,10 +18,10 @@
     Postcondition: elements contains its original items and items 
                    in elements are sorted in ascending order.
 */
-public static void selectionSort(int[] elements){
-    for (int j = 0; j <elements.length){
+public static void selectionSort(int[] elements) {
+    for (int j = 0; j <elements.length) {
         int minIndex = j;
-        for (int k = j+1; k < elements .length;k++){
+        for (int k = j+1; k < elements .length;k++) {
             if (elements[k]<elements[minIndex])
                 minIndex = k;
         }
@@ -46,11 +46,11 @@ e.g.蓝色是我们已经排好的数组，红色为未排好的。
     Postcondition: elements contains its original items and items 
                    in elements are sorted in ascending order.
 */
-public static void insertionSort(int[] elements){
-    for(int j = 1; j< elements.length; j++){
+public static void insertionSort(int[] elements) {
+    for(int j = 1; j< elements.length; j++) {
         int temp = elements[j];
         int possibleIndex = j;
-        while(possibleIndex > 0 && temp < elements[possibleIndex - 1]){
+        while(possibleIndex > 0 && temp < elements[possibleIndex - 1]) {
             elements[possibleIndex] = elements[possibleIndex - 1];
             possibleIndex --;
         }
@@ -65,7 +65,7 @@ public static void insertionSort(int[] elements){
 它的缺点十分明显：它需要储存一个跟原始数组一样长的数据。它还有个显著特点，就是排序时间不受原本数据排序的影响，不论是最好的情况还是最坏的情况。
 
 ```java
-public static void mergeSort(int[] elements){
+public static void mergeSort(int[] elements) {
     int n = elements.length;
     int[] temp = new int[n];
     mergeSortHelper(elements,0,n-1,temp);
@@ -84,8 +84,8 @@ public static void mergeSort(int[] elements){
 *       elements contains its original items and the items in 
 *       elements[from]...<= elements[to] are sorted in ascending order
 */
-private static void mergeSortHelper(int[] elements, int from, int to, int[] temp){
-    if (from < to){
+private static void mergeSortHelper(int[] elements, int from, int to, int[] temp) {
+    if (from < to) {
         int middle = (from + to)/2;
         mergeSortHelper(elements, from , middle, temp);
         mergeSortHelper(elements, middle+1, to, temp);
@@ -93,13 +93,13 @@ private static void mergeSortHelper(int[] elements, int from, int to, int[] temp
     }
 }
 
-private static void merge(int[] elements, int from, int mid, int to, int[] temp){
+private static void merge(int[] elements, int from, int mid, int to, int[] temp) {
     int i = from;
     int j = mid +1;
     int k = from;
     
-    while(i<=mid && j <=to){
-        if(elements[i]<elements[j]){
+    while(i<=mid && j <=to) {
+        if(elements[i]<elements[j]) {
             temp[k] = elements[i];
             i++;
         }
@@ -109,19 +109,19 @@ private static void merge(int[] elements, int from, int mid, int to, int[] temp)
         }
         k++;
     }
-    while (i <= mid){
+    while (i <= mid) {
         temp[k] = elements[i];
         i++;
         k++;
     }
     
-    while(j<=to){
+    while(j <= to) {
         temp[k] = elements[j];
         j++;
         k++
     }
     
-    for (k = from; k<=to; k++)
+    for (k = from; k<= to; k++)
         elements[k] = temp[k];
 }
 ```
